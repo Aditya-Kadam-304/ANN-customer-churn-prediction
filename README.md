@@ -6,9 +6,9 @@ This project builds an end-to-end customer churn prediction system using an Arti
 
 ## 🔗 Live Application
 
-The public Streamlit deployment link will appear here once the app is published on Streamlit Community Cloud.
+Interact with the deployed model here: [ANN Customer Churn Predictor](https://ann-customer-churn-prediction-ntktbaxsiv7k83zzqrjuiy.streamlit.app/)
 
-For now, the app can be run locally with:
+You can also run the app locally with:
 ```bash
 streamlit run app.py
 ```
