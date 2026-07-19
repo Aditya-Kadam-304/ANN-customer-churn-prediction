@@ -1,0 +1,25 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ann/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Local tool directories
+.agents/
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
