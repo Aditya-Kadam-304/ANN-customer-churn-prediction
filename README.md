@@ -1,6 +1,12 @@
 # Customer Churn Prediction with Artificial Neural Networks
 
-This project builds an end-to-end customer churn prediction system using an Artificial Neural Network (ANN) trained on a banking dataset. The trained model is exposed through a Streamlit web application that allows users to input customer details and receive a churn probability in real time.
+[![Streamlit App](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)
+
+This project builds an end-to-end customer churn prediction system using an Artificial Neural Network (ANN) trained on a banking dataset. The trained model is deployed through a Streamlit web application that allows users to input customer details and receive a churn probability in real time.
+
+## 🔗 Live Application
+
+Interact with the deployed model here: [ANN Customer Churn Predictor](https://your-streamlit-app-url.streamlit.app)
 
 ## Project Overview
 
@@ -14,7 +20,7 @@ The workflow includes:
 - Saving model artifacts for inference
 - Building an interactive Streamlit app for predictions
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - TensorFlow / Keras
@@ -24,7 +30,7 @@ The workflow includes:
 - Streamlit
 - Jupyter Notebook
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 .
@@ -40,7 +46,7 @@ The workflow includes:
 └── README.md                  # Project documentation
 ```
 
-## Dataset
+## 📊 Dataset
 
 The project uses a customer churn dataset containing features such as:
 - Credit Score
@@ -54,11 +60,16 @@ The project uses a customer churn dataset containing features such as:
 - Active member status
 - Estimated Salary
 
-## Model Summary
+## 🧠 Model Architecture
 
-The ANN model is trained to predict whether a customer is likely to churn based on the given input features.
+The model uses a multi-layer deep learning structure built with the Keras Sequential API:
+- Input layer matching the preprocessed feature vectors
+- Dense hidden layers with ReLU activation
+- Output layer with a Sigmoid activation to predict churn probability
+- Loss function: Binary Crossentropy
+- Optimizer: Adam
 
-## How to Run Locally
+## ▶️ How to Run Locally
 
 1. Clone this repository:
    ```bash
@@ -69,11 +80,14 @@ The ANN model is trained to predict whether a customer is likely to churn based 
 2. Create and activate a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate
    ```
    On Windows:
    ```bash
    venv\Scripts\activate
+   ```
+   On macOS/Linux:
+   ```bash
+   source venv/bin/activate
    ```
 
 3. Install the dependencies:
@@ -86,23 +100,18 @@ The ANN model is trained to predict whether a customer is likely to churn based 
    streamlit run app.py
    ```
 
-## Usage
+## 🚀 Usage
 
-Once the app is running, enter the customer details in the sidebar or input fields and click through the app to obtain the churn prediction.
+Once the application loads, use the input panel to adjust the customer attributes such as Age, Credit Score, Balance, and Geography. The model processes the inputs and returns a live probability indicating whether the customer is likely to churn.
 
-## Notes
-
-- The model and preprocessing artifacts are already included in the repository for inference.
-- This project is intended for learning and portfolio demonstration purposes.
-
-## Future Improvements
+## 🔮 Future Improvements
 
 Potential enhancements for this project include:
-- Hyperparameter tuning
-- Class imbalance handling
+- Hyperparameter tuning using Keras Tuner
+- Class imbalance handling with techniques such as SMOTE
 - Model explainability with SHAP or LIME
-- Deploying the app on Streamlit Cloud, AWS, or Azure
+- Deployment improvements for cloud-based production environments
 
-## License
+## 📄 License
 
 This project is intended for educational and portfolio purposes.
